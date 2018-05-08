@@ -1,0 +1,20 @@
+found users.txt.bak using annonymous login through ftp
+from the backup_wordpress/?feed=rss2 you know admin is John
+after running wpscan you confirm that john is an admin user, then, with the same tool a bruteforce can be done
+it is found that the password for john is enigma
+now with metasploit you can get a shell
+after some enumeration you see that there is a cronjob executing cleanup as root. cleanup can be modified by anyone
+just edit cleanup to execute a reverse python shell and wait
+
+You are in as root and you can cat the flag:
+
+Congratulations!
+
+If you can read this, that means you were able to obtain root permissions on this VM.
+You should be proud!
+
+There are multiple ways to gain access remotely, as well as for privilege escalation.
+Did you find them all?
+
+@abatchy17
+
